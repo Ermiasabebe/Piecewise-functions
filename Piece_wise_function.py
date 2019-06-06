@@ -27,26 +27,22 @@ def exp_piece(x):
 		return x**2 - np.e**x
 	elif x>=0:
 		return x-1
-	return 0.0 
+	#return 0.0 
 	
 def sin_tan(x):
 	if x<=np.pi:
 		return x*np.sin(x)
 	elif x>np.pi:
 		return x*np.tan(x)
-	return 0.0
+	#return 0.0
 	
 def sqrt_lin(k, x):
 	if 0<=x<=3:
 		return np.sqrt(k*x)
 	elif 3<x<=10:
 		return x+1
-	#eturn 0.0
+	
 
-
-#f __name__ == '__main__':
-
-#ef run_all():
 def run_all():
 
 	vecorize_piecewise = np.vectorize(Piecewise)
